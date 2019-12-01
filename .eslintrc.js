@@ -22,9 +22,13 @@ module.exports = {
         "react"
     ],
     "rules": {
-      "strict": [2, "global"],
+      "strict": [1, "global"],
       "semi": ["error", "always"],
       "indent": [2, "tab"],
-      "quotes": ["off", "single"]
+      "quotes": ["off", "single"],
+      "no-irregular-whitespace": 2,
+      "linebreak-style": [0, "unix"],
+      "no-multiple-empty-lines": [0, {"max": 2}],
+      "quotes": [0, "double"]
     }
 };

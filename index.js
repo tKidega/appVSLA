@@ -1,21 +1,35 @@
 /**
- * Sample React Native App
+ * Sample VSLA React Native App
  * https://github.com/facebook/react-native
  *
  * @format
  * @flow
  */
 
-//Import Libraries that will help create|make a component
-import React from 'react';
-import { AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import React, { Component } from 'react';
+import { AppRegistry, View, StyleSheet } from 'react-native';
+import Header from './src/components/Header';
+import Title from './src/components/Title';
+import Login from './src/components/Login';
+import Footer from './src/components/Footer';
 
-//Create a component
-const App = () => (
-	// For single line code only
-	<Header headerText={'App Header'}/>
-);
+class App extends Component {
+	render() {
+		return (
+			<View style={styles.container}>
+				<Header headerText={'cupBanker'}/>
+				<Title tagLine={'This is a tag line'}/>
+				<Login userLogin={'Login options'}/>
+				<Footer appFooter={'Footer options here'}/>
+			</View>
+		);
+	}
+}
 
-//Render compnent to the device
-AppRegistry.registerComponent('vsla', () => App);
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+	},
+});
+// Render this to device
+AppRegistry.registerComponent('vsla', ()=> App);
