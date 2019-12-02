@@ -1,7 +1,7 @@
 module.exports = {
     "env": {
-        "es6": true,
-        "node": true
+        "browser": true,
+        "es6": true
     },
     "extends": [
         "eslint:recommended",
@@ -22,13 +22,5 @@ module.exports = {
         "react"
     ],
     "rules": {
-      "strict": [1, "global"],
-      "semi": ["error", "always"],
-      "indent": [2, "tab"],
-      "quotes": ["off", "single"],
-      "no-irregular-whitespace": 2,
-      "linebreak-style": [0, "unix"],
-      "no-multiple-empty-lines": [0, {"max": 2}],
-      "quotes": [0, "double"]
     }
 };

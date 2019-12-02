@@ -150,7 +150,7 @@ android {
             keyPassword 'android'
         }
     }
-    buildToolsVersion = '28.0.3'
+    buildToolsVersion = buildToolsVersion
     buildTypes {
         debug {
             signingConfig signingConfigs.debug

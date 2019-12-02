@@ -17,7 +17,7 @@ class App extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Header headerText={'cupBanker'}/>
+				<Header mainHeader={'cupBanker'}/>
 				<Title tagLine={'This is a tag line'}/>
 				<Login userLogin={'Login options'}/>
 				<Footer appFooter={'Footer options here'}/>

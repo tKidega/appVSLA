@@ -7,11 +7,11 @@ const Header = (props) => {
 	// For single line code only
 	return (
 		<View style={styles.viewStyle}>
-			<Text style={styles.textStyle}>{props.headerText}</Text>
+			<Text style={styles.textStyle}>{props.mainHeader}</Text>
 		</View>
 	);
 };
-//Add styling prperties to elements
+//Add styling pr0perties to elements
 const styles = StyleSheet.create ({
 	//Style the view box
 	viewStyle: {
