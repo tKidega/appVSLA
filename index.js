@@ -8,10 +8,10 @@
 
 import React, { Component } from 'react';
 import { AppRegistry, View, StyleSheet } from 'react-native';
-import Header from './src/components/Header';
-import Title from './src/components/Title';
-import Login from './src/components/Login';
-import Footer from './src/components/Footer';
+import Header from './src/components/header';
+import Title from './src/components/title';
+import Login from './src/components/login';
+import Footer from './src/components/footer';
 
 class App extends Component {
 	render() {
